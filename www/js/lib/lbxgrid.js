@@ -15,7 +15,7 @@ EngagedNation.RequireJS.define(
          *
          * @param object|null config Config overrides.
          */
-        var Cahuilla WebLbxGrid = function(config)
+        var CahuillaWebLbxGrid = function(config)
         {
             this.config = {
                 xcloseBtnClass: 'fa fa-times',
@@ -29,7 +29,7 @@ EngagedNation.RequireJS.define(
         /**
          * Add methods
          */
-        Cahuilla WebLbxGrid.prototype = $.extend(
+        CahuillaWebLbxGrid.prototype = $.extend(
             Object.create(LbxGrid.prototype),
             {
                 buildGrid: function()
@@ -72,14 +72,14 @@ EngagedNation.RequireJS.define(
          */
         $.fn.lbxgrid = function(config)
         {
-            EngagedNation.jQuery.extensions.Cahuilla WebLbxGrid = new Cahuilla WebLbxGrid(config);
+            EngagedNation.jQuery.extensions.CahuillaWebLbxGrid = new CahuillaWebLbxGrid(config);
         };
 
         $.lbxgrid = function(config)
         {
-            EngagedNation.jQuery.extensions.Cahuilla WebLbxGrid = new Cahuilla WebLbxGrid(config);
+            EngagedNation.jQuery.extensions.CahuillaWebLbxGrid = new CahuillaWebLbxGrid(config);
         };
 
-        return Cahuilla WebLbxGrid;
+        return CahuillaWebLbxGrid;
     }
 );
