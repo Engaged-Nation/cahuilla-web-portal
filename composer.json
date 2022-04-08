@@ -1,6 +1,6 @@
 {
-    "name": "engaged-nation/rampart-portal",
-    "description": "Rampart Portal Site",
+    "name": "engaged-nation/cahuilla-web-portal",
+    "description": "Cahuilla Web Portal Site",
     "type": "project",
     "require": {
         "php": "^5.6",
