@@ -15,7 +15,7 @@ EngagedNation.RequireJS.define(
          *
          * @param object|null config Config overrides.
          */
-        var Cahuilla WebLbxToolTip = function(config)
+        var CahuillaWebLbxToolTip = function(config)
         {
             LbxToolTip.apply(this, arguments);
         };
@@ -23,7 +23,7 @@ EngagedNation.RequireJS.define(
         /**
          * Add methods
          */
-        Cahuilla WebLbxToolTip.prototype = $.extend(
+        CahuillaWebLbxToolTip.prototype = $.extend(
             Object.create(LbxToolTip.prototype),
             {
                 buildHtml: function($me){
@@ -34,9 +34,9 @@ EngagedNation.RequireJS.define(
 
         $.lbxtooltip = function(config)
         {
-            EngagedNation.jQuery.extensions.Cahuilla WebLbxToolTip = new Cahuilla WebLbxToolTip(config);
+            EngagedNation.jQuery.extensions.CahuillaWebLbxToolTip = new CahuillaWebLbxToolTip(config);
         };
 
-        return Cahuilla WebLbxToolTip;
+        return CahuillaWebLbxToolTip;
     }
 );
