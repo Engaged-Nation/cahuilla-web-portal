@@ -357,9 +357,9 @@ fzone:
     header_instant: "Go play with your instant reward"
     header_redeemable_employee: "Enjoy your redeemable reward"
 
-    bodycopy: "View your active rewards and redeem them by displaying this page on a mobile device to a Club Elevate
+    bodycopy: "<p class=\"body-p\">View your active rewards and redeem them by displaying this page on a mobile device to a Club Elevate
       representative before the expiration date. You can also download and display the voucher PDF to a representative
-      on your mobile device, or you can print it out and bring it with you."
+      on your mobile device, or you can print it out and bring it with you.</p>"
 
     details: '<p class="myvoucher-issuedTo" style="display: none;"><span class="goGold">Player Name</span>: %issuedTo%</p>
       <p class="myvoucher-playersCard" style="display: none;"><span class="goGold">Club Elevate Card Number</span>: %playerscard%</p>
