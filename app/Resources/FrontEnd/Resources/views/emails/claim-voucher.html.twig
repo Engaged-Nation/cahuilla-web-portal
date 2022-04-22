@@ -4,7 +4,8 @@
     {% set urlPrefix = '' %}
 {% endif %}
 
-{% set emailLogoUrl = urlPrefix ~ '/images/logos/email/voucherlogo.png' %}
+{% set emailLogoUrl = urlPrefix ~ '/images/logos/voucherLogo.png' %}
+{% set emailClientLogoUrl = urlPrefix ~ '/images/logos/clientVoucherLogo.png' %}
 
 {% if not isDownloadPdf %}
     <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -12,7 +13,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>
-        Retail Demo
+        Cahuilla Casino Hotel
     </title>
     {% endif %}
 
@@ -210,7 +211,6 @@
                 <tr>
                     <td bgcolor="#ffffff">
 
-
                         <table border="0" cellspacing="0" cellpadding="0" width="100%" bgcolor="#ffffff" align="center">
                             <tr>
                                 <td id="" valign="top"  style="padding-top:{{ padding20 }};padding-bottom:{{ padding20 }};padding-left:20px;padding-right:20px; text-align:center;">
@@ -220,12 +220,12 @@
                                                 <table border="0" cellspacing="0" cellpadding="0" width="100%" align="center" class="border">
                                                     <tr>
                                                         <td class="topbg" valign="top" align="center" style="padding-top:20px; padding-left:10px; padding-bottom:20px; padding-right:10px;">
-                                                            <div style="display: block; height: 25px;"></div>
+                                                            <div style="display: block; height: 45px;"><img src="{{ emailClientLogoUrl }}" border="0" style="display: block; margin-top: -15px; width: 75px;"></div>
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <td valign="top" align="center" style="padding-top:10px; padding-left:10px; padding-bottom:5px; padding-right:10px;">
-                                                            <img src="{{ emailLogoUrl }}" border="0" style="display: block; width: 300px;">
+                                                            <img src="{{ emailLogoUrl }}" border="0" style="display: block; width: 224px; height: auto;">
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -237,14 +237,14 @@
                                                     </tr>
                                                     <tr>
                                                         <td id="h1" valign="top"  style="padding-top: 10px;padding-bottom:5px;padding-left:20px;padding-right:20px; text-align:center;">
-                                                            <span class="text1" style="font-family:'Roboto-Bold', sans-serif; color:#80b40f; font-weight:700; font-size:34px; line-height:36px; text-transform: uppercase;">
+                                                            <span class="text1" style="font-family:'Roboto-Bold', sans-serif; color:#1e5805; font-weight:700; font-size:34px; line-height:36px; text-transform: uppercase;">
                                                                 {{ voucherTitle }}
                                                             </span>
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <td id="h2" valign="top" style="padding-top:5px;padding-bottom:5px;padding-left:20px;padding-right:20px; text-align:center;">
-                                                            <span class="text2" style="font-family:'Roboto-Bold', sans-serif; color:#000000; font-weight:700; font-size:22px; line-height:30px;">
+                                                            <span class="text2" style="font-family:'Roboto-Bold', sans-serif; color:#000000; font-weight:700; font-size:20px; line-height:30px;">
                                                                 VISIT.  REDEEM.  ENJOY.
                                                             </span>
                                                         </td>
@@ -252,7 +252,7 @@
                                                     <tr>
                                                         <td id="h3" valign="top"  style="padding-top:{{ padding10 }};padding-bottom:10px;padding-left:15px;padding-right:15px; text-align:center;{% if isDownloadPdf %} font-size:14px; {% endif %}">
                                                             <span class="text3" style="font-family:'Roboto', sans-serif; color:#000000; font-weight:300;{% if not isDownloadPdf %} font-size:14px; {% endif %}line-height:18px;">
-                                                                To redeem your reward, simply present this voucher to a Customer Service representative and they will exchange it for the reward listed above.
+                                                                To redeem your reward, simply present this voucher at Club Elevate and a team member will validate your voucher and present you with your reward.<br>Then it's yours to enjoy!
                                                             </span>
                                                         </td>
                                                     </tr>
@@ -263,9 +263,9 @@
                                                                     <td valign="top" style="padding-top:{{ padding5 }};padding-bottom:{{ padding5 }};padding-left:15px;padding-right:15px; text-align:left;{% if isDownloadPdf %} font-size:13px;{% endif %}">
                                                                         <span class="text6" style="font-family:'Roboto', sans-serif; color:#000000; font-weight:300;{% if not isDownloadPdf %} font-size:13px;{% endif %} line-height:16px;">
                                                                             <strong>ISSUED TO:</strong> {{ issuedTo }}<br>
-                                                                            <strong>CUSTOMER NUMBER:</strong> {{ playersCard }}<br>
+                                                                            <strong>CLUB ELEVATE CARD NUMBER:</strong> {{ playersCard }}<br>
                                                                             <strong>DATE ISSUED:</strong> {{ issuedDate|date("m/d/Y") }}<br>
-                                                                            <strong>EXPIRATION ISSUED:</strong> {{ expireDate|date("m/d/Y") }}<br>
+                                                                            <strong>EXPIRATION DATE:</strong> {{ expireDate|date("m/d/Y") }}<br>
                                                                             <strong>UNIQUE VOUCHER NUMBER:</strong> {{ vid }}
                                                                         </span>
                                                                     </td>
@@ -287,7 +287,7 @@
                                                     </tr>
                                                     <tr>
                                                         <td class="bottombg" valign="top" style="line-height:25px; font-size:25px;">
-                                                            <div style="display: block; height: 25px;"></div>
+                                                            <div style="display: block; height: 45px;"></div>
                                                         </td>
                                                     </tr>
                                                 </table>
